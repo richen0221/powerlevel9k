@@ -14,14 +14,17 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 
 # customized POWERLEVEL9k CONFIG
 #GENERAL_LEFT_PROMPT="virtualenv dir dir_writable vcs"
-POWERLEVEL9K_CONTEXT_TEMPLATE="`hostname -f`"
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh virtualenv_joined os_icon_joined context_joined dir dir_writable vcs)
-else
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv os_icon user_joined dir dir_writable vcs root_indicator load ram background_jobs command_execution_time history time status)
-fi
+#POWERLEVEL9K_CONTEXT_TEMPLATE="`hostname -f`"
+#if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+#  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh virtualenv os_icon_joined context_joined dir dir_writable vcs)
+#else
+#  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh virtualenv os_icon user_joined dir dir_writable vcs root_indicator load ram background_jobs command_execution_time history time status)
+#fi
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh virtualenv os_icon context dir dir_writable vcs root_indicator load ram background_jobs command_execution_time history time status)
+
 POWERLEVEL9K_DISABLE_RPROMPT=true
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator history load ram background_jobs command_execution_time time)
+
 POWERLEVEL9K_OS_ICON_FOREGROUND=000
 POWERLEVEL9K_OS_ICON_BACKGROUND=002
 POWERLEVEL9K_USER_DEFAULT_FOREGROUND=000
@@ -39,6 +42,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_HOME_ICON=''
 POWERLEVEL9K_HOME_SUB_ICON=''
 POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_RAM_ICON=''
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 # Set list of themes to load
