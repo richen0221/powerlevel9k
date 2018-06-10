@@ -1,7 +1,8 @@
 # powerlevel9k
 personal use powerlevel9k in Ubuntu 18.04 installation
 
-git clone the repo and `cd powerlevel9k` then `sh install.sh`.
+git clone the repo `git clone https://github.com/richen0221/powerlevel9k.git`
+and `cd powerlevel9k` then `sh install.sh`.
 It will install the package, DejaVu Sans Mono Nerd Font series and Konsole profile.
 Only the Konsole could be displayed normally.
 
